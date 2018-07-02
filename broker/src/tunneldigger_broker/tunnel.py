@@ -209,6 +209,7 @@ class Tunnel(protocol.HandshakeProtocolMixin, network.Pollable):
             self.endpoint[1],
             self.address[1],
             self.uuid,
+            self.broker.address[1],
         )
 
     def pmtu_discovery(self):
